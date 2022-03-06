@@ -27,3 +27,5 @@ Build and Test
 Command to run E2E scenario
 - mvn clean test -Dkarate.env=dev -Dkarate.options="--tags @E2E" -Dtest=TestRunner
 
+# After the E2E test case is finished, a new user will be created and added to the Lead Board with 4500 points
+
