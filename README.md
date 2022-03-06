@@ -25,5 +25,5 @@ Build and Test
 
 
 Command to run E2E scenario
-mvn clean test -Dkarate.env=dev -Dkarate.options="--tags @E2E" -Dtest=TestRunner
+- mvn clean test -Dkarate.env=dev -Dkarate.options="--tags @E2E" -Dtest=TestRunner
 
