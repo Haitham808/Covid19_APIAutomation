@@ -1,0 +1,739 @@
+{
+  "BASIC_BUNDLLNZ": {
+    "data": {
+      "id": "principal",
+      "type": "applicants",
+      "attributes": {
+        "title": "#(title)",
+        "firstName": "#(firstName)",
+        "middleNames": "#(middleNames)",
+        "lastName": "#(lastName)",
+        "dateOfBirth": "#(dateOfBirth)",
+        "acceptedPrivacyAct": "#(acceptedPrivacyAct)",
+        "countryOfResidence": "#(countryOfResidence)",
+        "addresses": [
+          {
+            "streetNumber": "8",
+            "streetName": "Banana",
+            "streetType": "ACC",
+            "unitNumber": null,
+            "country": "NZL",
+            "postcode": "4873",
+            "suburb": "Potts Point",
+            "state": "NSW",
+            "city": null,
+            "buildingName": "Bayside Manor",
+            "isPrimaryAddress": false,
+            "dpid": "39549554",
+            "addressType": "CURRENT"
+          }
+        ],
+        "contacts": [
+          {
+            "contactType": "EMAIL",
+            "emailType": "PRIMARY",
+            "isPrimaryContact": false,
+            "address": "apples@flexi.com.nz"
+          },
+          {
+            "contactType": "PHONE",
+            "phoneType": "MOBILE",
+            "isPrimaryContact": false,
+            "number": "+61426019185",
+            "extension": "200",
+            "area": "04"
+          }
+        ],
+        "documents": [
+          {
+            "documentType": "DRIVER_LICENCE",
+            "licenceNumber": "11111111",
+            "licenceVersion": "111",
+            "countryOfIssue": "NZL",
+            "expirydate":"2021-06-12",
+            "firstName": "Blobby",
+            "middleNames": "ppppppppppppp",
+            "lastName": "Boy"
+          }
+        ],
+        "idScan": {
+          "journeyId": "1234-1234-1234",
+          "timestamp": "2020-08-28T11:27:13.000+00:00"
+        }
+      }
+    }
+
+  },
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "46 BloodOrange Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "46",
+            "streetName": "BloodOrange",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "Kerikeri",
+            "state": "",
+            "postcode": "0294",
+            "country": "NZL",
+            "uniqueId": "123123123",
+            "city": "Kerikeri",
+            "postalAddress": "46 BloodOrange Road, RD 1, Kerikeri 0294",
+            "formattedAddress": "46 BloodOrange Road, Kerikeri 0294"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "Bobby",
+          "middleNames": "pppppppppppp",
+          "lastName": "Bob",
+          "dateOfBirth": "1952-09-17",
+          "licenceNumber": "AA111111",
+          "licenceVersion": "111"
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE2": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "46 BloodOrange Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "46",
+            "streetName": "BloodOrange",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "Kerikeri",
+            "state": "",
+            "postcode": "0294",
+            "country": "NZL",
+            "uniqueId": "123123123",
+            "city": "Kerikeri",
+            "postalAddress": "46 BloodOrange Road, RD 1, Kerikeri 0294",
+            "formattedAddress": "46 BloodOrange Road, Kerikeri 0294"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "Bobby",
+          "middleNames": "pppppppppppp",
+          "lastName": "Bob",
+          "dateOfBirth": "1952-09-17",
+          "licenceNumber": "AA111111",
+          "licenceVersion": "111"
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE_BSO": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "46 BloodOrange Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "46",
+            "streetName": "BloodOrange",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "Kerikeri",
+            "state": "",
+            "postcode": "0294",
+            "country": "NZL",
+            "uniqueId": "123123123",
+            "city": "Kerikeri",
+            "postalAddress": "46 BloodOrange Road, RD 1, Kerikeri 0294",
+            "formattedAddress": "46 BloodOrange Road, Kerikeri 0294"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "Leena",
+          "middleNames": "pppppppppppp",
+          "lastName": "Tinz",
+          "dateOfBirth": "1958-08-08",
+          "licenceNumber": "AA111111",
+          "licenceVersion": "111"
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE_BSO_2": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "22 queen street",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "22",
+            "streetName": "Queen",
+            "streetType": "St",
+            "streetTypeName": "street",
+            "suburb": "Petone Lower Hutt",
+            "state": "",
+            "postcode": "5012",
+            "country": "NZL",
+            "uniqueId": "123123123",
+            "city": "Petsone Lower Hutt",
+            "postalAddress": "22 queen street, Petsone Lower Hutt 5012",
+            "formattedAddress": "22 queen street, Petsone Lower Hutt 5012"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "JACOB",
+          "middleNames": "ppppppppppppp",
+          "lastName": "NORTHEY",
+          "dateOfBirth": "1945-12-25",
+          "licenceNumber": "AA111111",
+          "licenceVersion": "111"
+
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE_BSO_3": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "22 queen street",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "22",
+            "streetName": "Queen",
+            "streetType": "St",
+            "streetTypeName": "street",
+            "suburb": "Petsone Lower Hutt",
+            "state": "",
+            "postcode": "5012",
+            "country": "NZL",
+            "uniqueId": "123123123",
+            "city": "Petsone Lower Hutt",
+            "postalAddress": "22 queen street, Petsone Lower Hutt 5012",
+            "formattedAddress": "22 queen street, Petsone Lower Hutt 5012"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "JACOB ",
+          "middleNames": "ppppppppppppp",
+          "lastName": "NORTHEY",
+          "dateOfBirth": "1945-12-25",
+          "licenceNumber": "AA111111",
+          "licenceVersion": "111"
+
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE_BSO_4":
+  {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "117 Messines Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "117",
+            "streetName": "Messines",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "Karori",
+            "state": "",
+            "postcode": "6012",
+            "country": "NZL",
+            "uniqueId": "123123123",
+            "city": "Wellington",
+            "postalAddress": "117, Messines Road, Karori, Wellington, 6012",
+            "formattedAddress": "117, Messines Road, Karori, Wellington, 6012"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "Tina",
+          "middleNames": "ppppppppppppp",
+          "lastName": "Rogers",
+          "dateOfBirth": "1970-05-05",
+          "licenceNumber": "AA111111",
+          "licenceVersion": "111"
+        }
+      }
+    }
+  },
+
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE_FAILURE": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "20 Old Coach Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "",
+            "streetName": "Old Coach",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "HAVELOCK",
+            "state": "",
+            "postcode": "7100",
+            "country": "NZL",
+            "uniqueId": "123456",
+            "city": "HAVELOCK",
+            "postalAddress": "20 Old Coach Road, HAVELOCK 7100",
+            "formattedAddress": "20 Old Coach Road, HAVELOCK 7100"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "SALLY",
+          "middleNames": "pppppppppppppp",
+          "lastName": "TAYLOR",
+          "dateOfBirth": "1965-10-13",
+          "licenceNumber": "AA123456",
+          "licenceVersion": "333"
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE_FAILURE_2": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "27 Dominion Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "27",
+            "streetName": "Dominion",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "KAITAIA",
+            "state": "",
+            "postcode": "0410",
+            "country": "NZL",
+            "uniqueId": "123456",
+            "city": "KAITAIA",
+            "postalAddress": "27 Dominion Road,KAITAIA 0410",
+            "formattedAddress": "27 Dominion Road, KAITAIA 0410"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "NATASHA",
+          "middleNames": "JOANNE",
+          "lastName": "GREEN",
+          "dateOfBirth": "1950-09-27",
+          "licenceNumber": "AA654321",
+          "licenceVersion": "333"
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE_FAILURE_3": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "29 Dominion Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "27",
+            "streetName": "Dominion",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "KAITAIA",
+            "state": "",
+            "postcode": "0410",
+            "country": "NZL",
+            "uniqueId": "123456",
+            "city": "KAITAIA",
+            "postalAddress": "29 Dominion Road,KAITAIA 0410",
+            "formattedAddress": "29 Dominion Road, KAITAIA 0410"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "Alex",
+          "middleNames": "ppppppppppppp",
+          "lastName": "Green",
+          "dateOfBirth": "1951-09-27",
+          "licenceNumber": "123456789",
+          "licenceVersion": "123"
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE_COMPLETED": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "46 BloodOrange Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "46",
+            "streetName": "BloodOrange",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "Kerikeri",
+            "state": "",
+            "postcode": "0294",
+            "country": "NZL",
+            "uniqueId": "123123123",
+            "city": "Kerikeri",
+            "postalAddress": "46 BloodOrange Road, RD 1, Kerikeri 0294",
+            "formattedAddress": "46 BloodOrange Road, Kerikeri 0294"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "Bobby",
+          "middleNames": "Mc",
+          "lastName": "Bob",
+          "dateOfBirth": "1952-09-17",
+          "licenceNumber": "11111111",
+          "licenceVersion": "111"
+        }
+      }
+    }
+  },
+  "BRANDCODEBUNDLLNZ": {
+    "data": {
+      "id": "principal",
+      "type": "applicants",
+      "attributes": {
+        "title": "Mr",
+        "firstName": "Blobby",
+        "middleNames": "ppppppppppppp",
+        "lastName": "Boy",
+        "dateOfBirth": "1992-12-19",
+        "acceptedPrivacyAct": true,
+        "countryOfResidence": "NZL",
+        "addresses": [
+          {
+            "streetNumber": "8",
+            "streetName": "Banana",
+            "streetType": "ACC",
+            "unitNumber": null,
+            "country": "NZL",
+            "postcode": "4873",
+            "suburb": "Potts Point",
+            "state": "NSW",
+            "city": null,
+            "buildingName": "Bayside Manor",
+            "isPrimaryAddress": false,
+            "dpid": "39549554",
+            "addressType": "CURRENT"
+          }
+        ],
+        "contacts": [
+          {
+            "contactType": "EMAIL",
+            "emailType": "PRIMARY",
+            "isPrimaryContact": false,
+            "address": "apples@flexi.com.nz"
+          },
+          {
+            "contactType": "PHONE",
+            "phoneType": "MOBILE",
+            "isPrimaryContact": false,
+            "number": "+61426019185",
+            "extension": "200",
+            "area": "04"
+          }
+        ],
+        "documents": [
+          {
+            "documentType": "DRIVER_LICENCE",
+            "licenceNumber": "11111111",
+            "licenceVersion": "111",
+            "countryOfIssue": "NZL",
+            "expirydate":"2021-06-12",
+            "firstName": "Blobby",
+            "middleNames": "ppppppppppppp",
+            "lastName": "Boy"
+          }
+        ],
+        "idScan": {
+          "journeyId": "1234-1234-1234",
+          "timestamp": "2020-08-28T11:27:13.000+00:00"
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_PRIVACYFLAG": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "46 BloodOrange Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "46",
+            "streetName": "BloodOrange",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "Kerikeri",
+            "state": "",
+            "postcode": "0294",
+            "country": "NZL",
+            "uniqueId": "123123123",
+            "city": "Kerikeri",
+            "postalAddress": "46 BloodOrange Road, RD 1, Kerikeri 0294",
+            "formattedAddress": "46 BloodOrange Road, Kerikeri 0294"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "Bobby",
+          "middleNames": "Mc",
+          "lastName": "Bob",
+          "dateOfBirth": "1952-09-17",
+          "licenceNumber": "123124124",
+          "licenceVersion": "v123"
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_PRIVACYFLAG_FALSE": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": false,
+        "dvsConsent": true,
+        "addresses": {
+          "residential": {
+            "addressLine1": "46 BloodOrange Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "46",
+            "streetName": "BloodOrange",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "Kerikeri",
+            "state": "",
+            "postcode": "0294",
+            "country": "NZL",
+            "uniqueId": "123123123",
+            "city": "Kerikeri",
+            "postalAddress": "46 BloodOrange Road, RD 1, Kerikeri 0294",
+            "formattedAddress": "46 BloodOrange Road, Kerikeri 0294"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "Bobby",
+          "middleNames": "Mc",
+          "lastName": "Bob",
+          "dateOfBirth": "1952-09-17",
+          "licenceNumber": "123124124",
+          "licenceVersion": "v123"
+        }
+      }
+    }
+  },
+  "BASIC_BUNDLLNZ_DVS_FALSE": {
+    "data": {
+      "id": "updatePrincipalApplicantPersonalDetails",
+      "type": "actions",
+      "attributes": {
+        "acceptedPrivacyAct": true,
+        "dvsConsent": false,
+        "addresses": {
+          "residential": {
+            "addressLine1": "46 BloodOrange Road",
+            "addressLine2": "",
+            "unit": "",
+            "floor": "",
+            "buildingName": "",
+            "streetNumber": "46",
+            "streetName": "BloodOrange",
+            "streetType": "Rd",
+            "streetTypeName": "Road",
+            "suburb": "Kerikeri",
+            "state": "",
+            "postcode": "0294",
+            "country": "NZL",
+            "uniqueId": "123123123",
+            "city": "Kerikeri",
+            "postalAddress": "46 BloodOrange Road, RD 1, Kerikeri 0294",
+            "formattedAddress": "46 BloodOrange Road, Kerikeri 0294"
+          }
+        },
+        "identificationDocument": {
+          "docType": "DRIVER_LICENCE",
+          "countryCode": "NZL",
+          "firstName": "Bobby",
+          "middleNames": "Mc",
+          "lastName": "Bob",
+          "dateOfBirth": "1952-09-17",
+          "licenceNumber": "123124124",
+          "licenceVersion": "v123"
+        }
+      }
+    }
+  },
+  "MANDATORY": {
+    "data": {
+      "id": "#(applicantID)",
+      "type": "#(type)",
+      "attributes": {
+        "documents": []
+      }
+    }
+  },
+  "MANDATORY_1": {
+    "data": {
+      "id": "#(applicantID)",
+      "type": "#(type)",
+      "attributes": {
+        "documents": []
+      }
+    }
+  },
+  "COMPLETE": {
+    "data": {
+      "id": "#(applicantID)",
+      "type": "#(type)",
+      "attributes": {
+        "title": "#(title)",
+        "firstName": "#(firstName)",
+        "middleNames": "#(middleNames)",
+        "lastName": "#(lastName)",
+        "dateOfBirth": "#(dateOfBirth)",
+        "acceptedPrivacyAct": "#(acceptedPrivacyAct)",
+        "countryOfResidence": "#(countryOfResidence)",
+        "addresses": "#(addresses)",
+        "contacts": "#(contacts)",
+        "documents": "#(documents)",
+        "idScan": "#(idScan)"
+      }
+    }
+  },
+  "COMPLETE_1": {
+    "data": {
+      "id": "#(applicantID)",
+      "type": "#(type)",
+      "attributes": {
+        "title": "#(title)",
+        "firstName": "#(firstName)",
+        "middleNames": "#(middleNames)",
+        "lastName": "#(lastName)",
+        "dateOfBirth": "#(dateOfBirth)",
+        "acceptedPrivacyAct": "#(acceptedPrivacyAct)",
+        "countryOfResidence": "#(countryOfResidence)",
+        "addresses": "#(addresses)",
+        "contacts": "#(contacts)",
+        "documents": "#(documents)",
+        "idScan": "#(idScan)"
+      }
+    }
+  },
+  "BASIC": {
+    "data": {
+      "id": "#(applicantID)",
+      "type": "#(type)",
+      "attributes": {
+        "title": "#(title)",
+        "firstName": "#(firstName)",
+        "middleNames": "#(middleNames)",
+        "lastName": "#(lastName)",
+        "dateOfBirth": "#(dateOfBirth)",
+        "acceptedPrivacyAct": "#(acceptedPrivacyAct)",
+        "countryOfResidence": "#(countryOfResidence)"
+      }
+    }
+  }
+}

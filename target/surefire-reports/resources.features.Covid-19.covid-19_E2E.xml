@@ -1,0 +1,12 @@
+<testsuite failures="0" name="resources/features/Covid-19/covid-19_E2E.feature" skipped="0" tests="1" time="10.499252">
+  <testcase classname="resources.features.Covid-19.covid-19_E2E" name="E2E scenario" time="10.499252">
+    <system-out>* url baseURL ............................................................. passed
+* print '######### --  verify token  -- #########' ........................ passed
+* call read('./services/verifyToken.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA'} . passed
+* call read('./services/userRegister.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA',userName:'haitham1'} . passed
+* call read('./services/userLogin.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA',userName:'haitham1'} . passed
+* call read('./services/leadBoard_getUsers.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA'} . passed
+* call read('./services/leadBoard_addUser.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA',userName:'haitham1'} . passed
+* call read('./services/leadBoard_updateUser.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA',userName:'haitham1'} . passed</system-out>
+  </testcase>
+</testsuite>

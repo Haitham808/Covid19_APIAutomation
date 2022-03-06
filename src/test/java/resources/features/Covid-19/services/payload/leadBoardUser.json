@@ -1,0 +1,10 @@
+{
+    "addUser": {
+        "username": "#(user)",
+        "score": 0
+    },
+    "updateUser": {
+        "username": "#(user)",
+        "score": 100
+    }
+}    

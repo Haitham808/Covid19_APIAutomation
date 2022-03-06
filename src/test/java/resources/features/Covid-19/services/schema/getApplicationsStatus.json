@@ -1,0 +1,1174 @@
+{
+  "applicationExist": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    }
+  },
+  "applicationNotFound": {
+    "statusCode": 404,
+    "message": "Resource not found"
+  },
+  "applicationValidationError": {
+    "errors": [
+      {
+        "status": 400,
+        "code": "VALIDATION_ERROR",
+        "title": "#string",
+        "detail": "#string"
+      }
+    ]
+  },
+  "applicationHasID": {
+    "data": {
+      "relationships": {
+        "applicants": {
+          "data": [
+            {
+              "id": "principal",
+              "type": "applicants"
+            }
+          ],
+          "links": {
+            "self": "#string"
+          }
+        },
+        "actions": {
+          "links": {
+            "self": "#string"
+          }
+        },
+        "status": {
+          "links": {
+            "self": "#string"
+          }
+        }
+      },
+      "attributes": {
+        "countryCode": "#string",
+        "referralCode": "#(ReferralCode)",
+        "startDate": "#string"
+      },
+      "id": "#(appID)",
+      "type": "applications"
+    }
+  },
+  "applicationNoID": {
+    "statusCode": 404,
+    "message": "Resource not found"
+  },
+  "applicationMethodIncorrect": {
+    "statusCode": 404,
+    "message": "Resource not found"
+  },
+  "BASIC_BUNDLLNZ_WITH_REFERRALCODE": {
+    "data": {
+      "id": "#string",
+      "type": "#string",
+      "attributes": {
+        "startDate": "#regex ^([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}\\+00:00$",
+        "countryCode": "#string",
+        "referralCode": "#(ReferralCode)"
+      },
+      "relationships": {
+        "status": {
+          "links": {
+            "self": "#string"
+          }
+        },
+        "actions": {
+          "links": {
+            "self": "#string"
+          }
+        },
+        "applicants": {
+          "links": {
+            "self": "#string"
+          },
+          "data": [
+            {
+              "id": "#string",
+              "type": "#string"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "applicationActionState": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "PENDING",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "applicationActionStateCheckFail": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "FAILED_REATTEMPT",
+          "lastUpdated": "#string",
+          "code": "101"
+        }
+      }
+    ]
+  },
+  "applicationActionStateCheckFailedRetry": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "FAILED_RETRY",
+          "lastUpdated": "#string",
+          "code": "101"
+        }
+      }
+    ]
+  },
+  "applicationActionStateCheckFailMaxAttempts": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "CLOSED",
+        "code":"200"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "applicationActionStateAfterUpdatePersonalDetails": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "PENDING",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "PENDING",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "applicationActionStateAfterUpdateApplicantFinancialDetails": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "attributes": {
+          "lastUpdated": "#string",
+          "state": "COMPLETED"
+        },
+        "id": "AddReferralCode",
+        "type": "actions"
+      },
+      {
+        "attributes": {
+          "lastUpdated": "#string",
+          "state": "COMPLETED"
+        },
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions"
+      },
+      {
+        "attributes": {
+          "lastUpdated": "#string",
+          "state": "PENDING"
+        },
+        "id": "ProcessBankStatements",
+        "type": "actions"
+      },
+      {
+        "attributes": {
+          "lastUpdated": "#string",
+          "state": "COMPLETED"
+        },
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions"
+      },
+      {
+        "attributes": {
+          "lastUpdated": "#string",
+          "code": "#string",
+          "state": "#string"
+        },
+        "id": "ProcessPreConditions",
+        "type": "actions"
+      }
+    ]
+  },
+  "applicationActionStateAfterProcessPreCondition": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "PENDING",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "CheckServiceability",
+        "type": "actions",
+        "attributes": {
+          "state": "PENDING",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "applicationActionStateAfterUpdateApplicantFinancialDetails_2": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "PROCESSING",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "CheckServiceability",
+        "type": "actions",
+        "attributes": {
+          "state": "PENDING",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "applicationActionStateAfterUpdateApplicantFinancialDetails_OPEN":{
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "CheckServiceability",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessFundingSource",
+        "type": "actions",
+        "attributes": {
+          "state": "PENDING",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "applicationActionStateAfterProcessBankStatement": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "PENDING",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "applicationActionStateAfterProcessBankStatementDecline": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "FAILED_REATTEMPT",
+          "lastUpdated": "#string",
+          "code":"109"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "PENDING",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "checkStateUpdateApplicantFinancialDetails_WithoutRefreshToken": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "PROCESSING",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "FAILED_RETRY",
+          "lastUpdated": "#string",
+          "code": "111"
+        }
+      }
+    ]
+  },
+  "applicationActionStateAfterCheckServicability": {
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "CLOSED"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "CheckServiceability",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "applicationActionStateAfterAddingFundingSource":{
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "CheckServiceability",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessFundingSource",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id":"ChooseCreditLimits",
+        "type":"actions",
+        "attributes":{
+          "state":"PENDING",
+          "lastUpdated":"#string"
+        }
+      }
+    ]
+  },
+  "stateAfterChoosingCreditLimit":{
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "CheckServiceability",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessFundingSource",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id":"ChooseCreditLimits",
+        "type":"actions",
+        "attributes":{
+          "state":"COMPLETED",
+          "lastUpdated":"#string"
+        }
+      },
+      {
+        "id": "AcceptOffer",
+        "type": "actions",
+        "attributes": {
+          "state": "PENDING",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "stateAfterAcceptOffer":{
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "COMPLETED"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "CheckServiceability",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessFundingSource",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id":"ChooseCreditLimits",
+        "type":"actions",
+        "attributes":{
+          "state":"COMPLETED",
+          "lastUpdated":"#string"
+        }
+      },
+      {
+        "id": "AcceptOffer",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProvisionAccount",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  },
+  "stateAfterChoosingCreditLimitFail":{
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "CheckServiceability",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessFundingSource",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id":"ChooseCreditLimits",
+        "type":"actions",
+        "attributes":{
+          "state":"PENDING",
+          "lastUpdated":"#string"
+        }
+      }
+    ]
+  },
+  "applicationActionStateAfterChooseCreditLimit":{
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "OPEN"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "CheckServiceability",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessFundingSource",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id":"ChooseCreditLimits",
+        "type":"actions",
+        "attributes":{
+          "state":"COMPLETED",
+          "lastUpdated":"#string"
+        }
+      },
+      {
+        "id":"AcceptOffer",
+        "type":"actions",
+        "attributes":{
+          "state":"PENDING",
+          "lastUpdated":"#string"
+        }
+      }
+    ]
+  },
+  "stateAfterAcceptingOfferClose":{
+    "data": {
+      "type": "status",
+      "attributes": {
+        "state": "CLOSED",
+        "code":"202"
+      }
+    },
+    "included": [
+      {
+        "id": "AddReferralCode",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantPersonalDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessBankStatements",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "UpdatePrincipalApplicantFinancialDetails",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessPreConditions",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "CheckServiceability",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id": "ProcessFundingSource",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      },
+      {
+        "id":"ChooseCreditLimits",
+        "type":"actions",
+        "attributes":{
+          "state":"COMPLETED",
+          "lastUpdated":"#string"
+        }
+      },
+      {
+        "id":"AcceptOffer",
+        "type":"actions",
+        "attributes":{
+          "state":"COMPLETED",
+          "lastUpdated":"#string"
+        }
+      },
+      {
+        "id": "ProvisionAccount",
+        "type": "actions",
+        "attributes": {
+          "state": "COMPLETED",
+          "lastUpdated": "#string"
+        }
+      }
+    ]
+  }
+}
+
+
+
+
+

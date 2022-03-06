@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>resources.features.Covid-19.covid-19_E2E</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2022-03-06 11:11:15 AM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1.1:20]">[1.1:20] E2E scenario </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">resources/features/Covid-19/covid-19_E2E.feature</span><span class="feature-description">Covid19 E2E</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1.1:20]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">E2E</a><a class="badge badge-primary" href="karate-tags.html">dev_E2E</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario Outline: [1.1:20]</span><span class="scenario-name">E2E scenario </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 10499</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1.1:20]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:20]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url baseURL</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">11:11:04.647 Selected environment is:  dev</div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">* print '######### --  verify token  -- #########'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="preformatted" data-parent="2">11:11:04.818 [print] ######### --  verify token  -- #########</div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">* call read('./services/verifyToken.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA'}</div>
+                        </div>
+                        <div class="time-cell passed">3066</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">resources/features/Covid-19/services/verifyToken.feature</div>
+                        </div>
+                        <div class="time-cell passed">3036</div>
+                    </div>
+                    <div class="callarg-container" data-parent="3.1">
+                        <div class="step-ref"> </div>
+                        <div class="preformatted">{
+  "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA"
+}
+</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* url baseURL</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* configure headers = {'Authorization':'#(token)'}</div>
+                        </div>
+                        <div class="time-cell passed">12</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given path 'auth/verifytoken'</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">2994</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">11:11:05.012 request:
+1 &gt; GET https://supervillain.herokuapp.com/auth/verifytoken
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: supervillain.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:11:07.857 response time in milliseconds: 2840.82
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 35
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 06 Mar 2022 00:11:06 GMT
+1 &lt; Etag: W/"23-EwZXcTNkCavYzo6XM0HRbCZ+P8g"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"app_id":641,"app":"HaithamKey"}]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def verifyToken = read ("./resources/features/Covid-19/services/schema/verifyToken.json")</div>
+                        </div>
+                        <div class="time-cell passed">12</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* match response == '#(verifyToken)'</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">* call read('./services/userRegister.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA',userName:'haitham1'}</div>
+                        </div>
+                        <div class="time-cell passed">1454</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">resources/features/Covid-19/services/userRegister.feature</div>
+                        </div>
+                        <div class="time-cell passed">1434</div>
+                    </div>
+                    <div class="callarg-container" data-parent="11.1">
+                        <div class="step-ref"> </div>
+                        <div class="preformatted">{
+  "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA",
+  "userName": "haitham1"
+}
+</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* url baseURL</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def info = {user: '#(userName)'}</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def user = info.user</div>
+                        </div>
+                        <div class="time-cell passed">13</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* configure headers = {'Authorization': '#(token)'}</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def requestBody = read ('./resources/features/Covid-19/services/payload/userInfo.json')</div>
+                        </div>
+                        <div class="time-cell passed">15</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given path 'auth/user/register'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request requestBody</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">1392</div>
+                    </div>
+                    <div class="preformatted" data-parent="19">11:11:07.955 request:
+1 &gt; POST https://supervillain.herokuapp.com/auth/user/register
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 40
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: supervillain.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{"username":"haitham1","password":"123"}
+
+11:11:09.339 response time in milliseconds: 1383.06
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 06 Mar 2022 00:11:08 GMT
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express</div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref passed">21</div>
+                            <div class="step-cell passed">* call read('./services/userLogin.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA',userName:'haitham1'}</div>
+                        </div>
+                        <div class="time-cell passed">1469</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">resources/features/Covid-19/services/userLogin.feature</div>
+                        </div>
+                        <div class="time-cell passed">1440</div>
+                    </div>
+                    <div class="callarg-container" data-parent="21.1">
+                        <div class="step-ref"> </div>
+                        <div class="preformatted">{
+  "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA",
+  "userName": "haitham1"
+}
+</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref passed">22</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* url baseURL</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref passed">23</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def info = {user: '#(userName)'}</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref passed">24</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def user = info.user</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref passed">25</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* configure headers = {'Authorization':'#(token)'}</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref passed">26</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def requestBody = read ('./resources/features/Covid-19/services/payload/userInfo.json')</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref passed">27</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given path 'auth/user/login'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref passed">28</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request requestBody</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="29">
+                            <div class="step-ref passed">29</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">1403</div>
+                    </div>
+                    <div class="preformatted" data-parent="29">11:11:09.386 request:
+1 &gt; POST https://supervillain.herokuapp.com/auth/user/login
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 40
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: supervillain.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{"username":"haitham1","password":"123"}
+
+11:11:10.786 response time in milliseconds: 1399.53
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 259
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 06 Mar 2022 00:11:09 GMT
+1 &lt; Etag: W/"103-yxsmd52N9ILHMZqBoPtYSn1nfqs"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"token":"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhaXRoYW0xIiwiZXhwaXJlc0luIjoiMyBtaW4iLCJpYXQiOjE2NDY1MjU0NjksImV4cCI6MTY0NjUyNTY0OX0.eKK4FoCTVo8P0U8pyj8t8RcV7RKgVqQEB1DYSn4fuC3VqDXXRhjN2OvHUfVesThAVrlSpkI9y333KJYJtGt_WA","expiresIn":"3 min"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="30">
+                            <div class="step-ref passed">30</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def userLogin = read ("./resources/features/Covid-19/services/schema/userLogin.json")</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* match response == '#(userLogin)'</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref passed">33</div>
+                            <div class="step-cell passed">* call read('./services/leadBoard_getUsers.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA'}</div>
+                        </div>
+                        <div class="time-cell passed">1491</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="33.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">resources/features/Covid-19/services/leadBoard_getUsers.feature</div>
+                        </div>
+                        <div class="time-cell passed">1472</div>
+                    </div>
+                    <div class="callarg-container" data-parent="33.1">
+                        <div class="step-ref"> </div>
+                        <div class="preformatted">{
+  "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA"
+}
+</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* url baseURL</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def info = {user: '#(userName)'}</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="36">
+                            <div class="step-ref passed">36</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def user = info.user</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="37">
+                            <div class="step-ref passed">37</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* configure headers = {'Authorization':'#(token)'}</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="38">
+                            <div class="step-ref passed">38</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given path 'v1/user'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="39">
+                            <div class="step-ref passed">39</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request requestBody</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="40">
+                            <div class="step-ref passed">40</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">1438</div>
+                    </div>
+                    <div class="preformatted" data-parent="40">11:11:10.837 request:
+1 &gt; GET https://supervillain.herokuapp.com/v1/user
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: supervillain.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+11:11:12.272 response time in milliseconds: 1432.28
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 233
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 06 Mar 2022 00:11:11 GMT
+1 &lt; Etag: W/"e9-PSSKLhY9m046zLFjHXgSPycaFjw"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+[{"username":"test15","score":100},{"username":"test16","score":100},{"username":"test17","score":100},{"username":"test18","score":100},{"username":"test13","score":0},{"username":"test14","score":0},{"username":"test11","score":0}]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="41">
+                            <div class="step-ref passed">41</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="42">
+                            <div class="step-ref passed">42</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def verifyusersList = read ("./resources/features/Covid-19/services/schema/leadBoard_getUsers.json")</div>
+                        </div>
+                        <div class="time-cell passed">18</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="43">
+                            <div class="step-ref passed">43</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* match response == '#[] verifyusersList'</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="44">
+                            <div class="step-ref passed">44</div>
+                            <div class="step-cell passed">* call read('./services/leadBoard_addUser.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA',userName:'haitham1'}</div>
+                        </div>
+                        <div class="time-cell passed">1598</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="44.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">resources/features/Covid-19/services/leadBoard_addUser.feature</div>
+                        </div>
+                        <div class="time-cell passed">1578</div>
+                    </div>
+                    <div class="callarg-container" data-parent="44.1">
+                        <div class="step-ref"> </div>
+                        <div class="preformatted">{
+  "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA",
+  "userName": "haitham1"
+}
+</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="45">
+                            <div class="step-ref passed">45</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* url baseURL</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="46">
+                            <div class="step-ref passed">46</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def info = {user: '#(userName)'}</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="47">
+                            <div class="step-ref passed">47</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def user = info.user</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="48">
+                            <div class="step-ref passed">48</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* configure headers = {'Authorization':'#(token)'}</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="49">
+                            <div class="step-ref passed">49</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def requestJson = read ('./resources/features/Covid-19/services/payload/leadBoardUser.json')</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="50">
+                            <div class="step-ref passed">50</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def requestBody = requestJson['addUser']</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="51">
+                            <div class="step-ref passed">51</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given path 'v1/user'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="52">
+                            <div class="step-ref passed">52</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request requestBody</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="53">
+                            <div class="step-ref passed">53</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">1528</div>
+                    </div>
+                    <div class="preformatted" data-parent="53">11:11:12.349 request:
+1 &gt; POST https://supervillain.herokuapp.com/v1/user
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 33
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: supervillain.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{"username":"haitham1","score":0}
+
+11:11:13.875 response time in milliseconds: 1524.67
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 44
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 06 Mar 2022 00:11:12 GMT
+1 &lt; Etag: W/"2c-Ne7/VH8/Qgve0R5CLf3Mr+gUUVI"
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"status":"success","message":"User added."}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="54">
+                            <div class="step-ref passed">54</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 201</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="55">
+                            <div class="step-ref passed">55</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def userAdded = read ("./resources/features/Covid-19/services/schema/leadBoard_userAdded.json")</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="56">
+                            <div class="step-ref passed">56</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* match response == '#(userAdded)'</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="57">
+                            <div class="step-ref passed">57</div>
+                            <div class="step-cell passed">* call read('./services/leadBoard_updateUser.feature') {token:'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA',userName:'haitham1'}</div>
+                        </div>
+                        <div class="time-cell passed">1415</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="57.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">resources/features/Covid-19/services/leadBoard_updateUser.feature</div>
+                        </div>
+                        <div class="time-cell passed">1396</div>
+                    </div>
+                    <div class="callarg-container" data-parent="57.1">
+                        <div class="step-ref"> </div>
+                        <div class="preformatted">{
+  "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA",
+  "userName": "haitham1"
+}
+</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="58">
+                            <div class="step-ref passed">58</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* url baseURL</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="59">
+                            <div class="step-ref passed">59</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def info = {user: '#(userName)'}</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="60">
+                            <div class="step-ref passed">60</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def user = info.user</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="61">
+                            <div class="step-ref passed">61</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* configure headers = {'Authorization':'#(token)'}</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="62">
+                            <div class="step-ref passed">62</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def requestJson = read ('./resources/features/Covid-19/services/payload/leadBoardUser.json')</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="63">
+                            <div class="step-ref passed">63</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def requestBody = requestJson['updateUser']</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="64">
+                            <div class="step-ref passed">64</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given path 'v1/user'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="65">
+                            <div class="step-ref passed">65</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request requestBody</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="66">
+                            <div class="step-ref passed">66</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method put</div>
+                        </div>
+                        <div class="time-cell passed">1373</div>
+                    </div>
+                    <div class="preformatted" data-parent="66">11:11:13.943 request:
+1 &gt; PUT https://supervillain.herokuapp.com/v1/user
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJIYWl0aGFtS2V5IiwiZW1haWwiOiJoYWl0aGFtLml0ODBAZ21haWwuY29tIiwiaWF0IjoxNjQ2NDM0MTE1LCJleHAiOjE2NDY2OTMzMTV9.l_FOViVFz6zKFJlzMhUOTXgNyVbuc3ZDxYokCoRdrU5PJyvZs2ljO-Z6Pfs6GAqXDtzIgqKJbv_PtluXh-fCoA
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 35
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: supervillain.herokuapp.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{"username":"haitham1","score":100}
+
+11:11:15.312 response time in milliseconds: 1368.36
+1 &lt; 204
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 06 Mar 2022 00:11:14 GMT
+1 &lt; Server: Cowboy
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express</div>
+                    <div class="step-row">
+                        <div class="step-container" id="67">
+                            <div class="step-ref passed">67</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 204</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
