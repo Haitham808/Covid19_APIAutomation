@@ -5,6 +5,6 @@
     },
     "updateUser": {
         "username": "#(user)",
-        "score": 100
+        "score": 4500
     }
 }    
